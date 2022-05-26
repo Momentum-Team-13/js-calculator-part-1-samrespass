@@ -1,0 +1,10 @@
+/* General Styling */
+body {background-color: lightpink;}
+.wrap {max-width:600px;margin:auto;background-color:pink;display: flex;justify-content: center;}
+button {background-color:hotpink;width:100px;height:100px;border:1px black solid;font-size:25px;font-family: 'Press Start 2P', Roboto;}
+button:hover {background-color:darkviolet;}
+button:active {background-color:black;color:white;transition: 0s;}
+/* Calculator Styling */
+#calculatorHeader {display:grid;grid-template-columns: 25% 75%;background-color:black;}
+#calculatorButtons {display:grid;grid-template-columns: 25% 25% 25% 25%;grid-template-rows: 25% 25% 25% 25%;}
+#resultScreen {margin:auto;color:white;font-weight: bold;font-size:46px;font-family: 'Press Start 2P', Roboto;}
