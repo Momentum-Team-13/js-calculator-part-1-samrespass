@@ -10,10 +10,8 @@ console.log(modifier)
 for (let button of buttons) {
     button.addEventListener("click", function (event) {
         result.textContent += event.target.textContent;
-        if (result.textContent.length > 6) {
-            result.textContent = "ERROR";
-        }
         console.log(event.target.textContent);
+
     })
 }
 // This is our equal button functionality
@@ -30,10 +28,6 @@ for (let modify of modifier) {
     modify.addEventListener("click", function (summer) {
         result.textContent += summer.target.textContent;
         console.log(summer.target.textContent);
-        console.log(summer.target.textContent.length);
-        if (result.textContent.length === 1) {
-           modify.disable=true;
-        }
     })
 }
 // This is our Clear Button Functionality
@@ -41,3 +35,4 @@ killer.addEventListener("click", function (wiper) {
     result.textContent = "";
 }
 )
+
