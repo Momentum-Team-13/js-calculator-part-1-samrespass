@@ -7,7 +7,7 @@ button:active {background-color:black;color:white;transition: 0s;}
 /* Calculator Styling */
 #calculatorHeader {display:grid;grid-template-columns: 25% 75%;background-color:black;}
 #calculatorButtons {display:grid;grid-template-columns: 25% 25% 25% 25%;grid-template-rows: 25% 25% 25% 25%;}
-#resultScreen {width:200px;margin:auto;color:white;font-weight: bold;font-size:100%^;font-family: 'Press Start 2P', Roboto;}
+#resultScreen {margin:auto;color:white;font-weight: bold;font-size:46px;font-family: 'Press Start 2P', Roboto;}
 div.button.keypad {width: 100%;height: 100%;display:flex;justify-content: center;align-items: center;}
 div.button.modify {width: 100%;height: 100%;display:flex;justify-content: center;align-items: center;}
 div.equate {width: 100%;height: 100%;display:flex;justify-content: center;align-items: center;}
