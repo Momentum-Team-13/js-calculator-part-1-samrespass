@@ -10,7 +10,10 @@ console.log(modifier)
 for (let button of buttons) {
     button.addEventListener("click", function (event) {
         result.textContent += event.target.textContent;
-        console.log(event.target.textContent);
+        console.log(result.textContent.length);
+    if ((result.textContent.length > 6) && (result.textContent.length += 1)) {
+        result.style.font = "10px"
+    }
 
     })
 }
@@ -28,6 +31,10 @@ for (let modify of modifier) {
     modify.addEventListener("click", function (summer) {
         result.textContent += summer.target.textContent;
         console.log(summer.target.textContent);
+        if ((result.textContent.indexOf("++") != -1) || (result.textContent.indexOf("+-") != -1) || (result.textContent.indexOf("+*") != -1) || (result.textContent.indexOf("+/") != -1) || (result.textContent.indexOf("--") != -1) || (result.textContent.indexOf("-+") != -1) || (result.textContent.indexOf("-*") != -1) || (result.textContent.indexOf("-/") != -1) || (result.textContent.indexOf("**") != -1) || (result.textContent.indexOf("*+") != -1) || (result.textContent.indexOf("*-") != -1) || (result.textContent.indexOf("*/") != -1) || (result.textContent.indexOf("//") != -1) || (result.textContent.indexOf("/-") != -1) || (result.textContent.indexOf("/+") != -1) || (result.textContent.indexOf("/*") != -1)) {
+            result.textContent = result.textContent.slice(0, -1);
+            console.log("cleaned!");
+        }
     })
 }
 // This is our Clear Button Functionality
