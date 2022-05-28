@@ -45,13 +45,13 @@ for (let button of buttons) {
 finisher.addEventListener("click", function (formulize) {
     console.log(eval(result.textContent))
     result.textContent = eval(result.textContent);
-    if ((result.textContent < 1) && (result.textContent.length > 6)) {
-        result.textContent = result.textContent.slice(0, -14);
-                // Pussy Control Caller
-                prince.pussyControl.call();
-                // Doves Cry Caller
-                prince.dovesCry.call();
+    if (result.textContent.length > 12) {
+        result.textContent = result.textContent.slice(0, -11)
     }
+                    // Pussy Control Caller
+                    prince.pussyControl.call();
+                    // Doves Cry Caller
+                    prince.dovesCry.call();
 }
 )
 // This is our Modifier Button Functionality
