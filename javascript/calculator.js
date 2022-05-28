@@ -23,6 +23,7 @@ const pussy = {
     }
 }
 }
+
 // This is our keypad functionality
 for (let button of buttons) {
     button.addEventListener("click", function (event) {
@@ -36,10 +37,7 @@ for (let button of buttons) {
 finisher.addEventListener("click", function (formulize) {
     console.log(eval(result.textContent))
     result.textContent = eval(result.textContent);
-    if (result.textContent > 999999) {
-        result.textContent = "ERROR";
-    }
-    else if ((result.textContent < 1) && (result.textContent.length > 6)) {
+    if ((result.textContent < 1) && (result.textContent.length > 6)) {
         result.textContent = result.textContent.slice(0, -14);
                 // Pussy Control Caller
                 pussy.sizer.call();
