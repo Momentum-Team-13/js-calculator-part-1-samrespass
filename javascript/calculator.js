@@ -20,12 +20,9 @@ const prince = {
     }
 },
     dovesCry: function limiter() {
-        if ((result.textContent.length >= 10) && (result.textContent.endsWith("+") === true))  {
-           result.textContent = result.textContent.slice(0, -2)
-           console.log("caught it!")
-        }
-        else if (result.textContent.length > 11) {
-            result.textContent = "";
+        if (result.textContent.length >= 10) {
+           result.textContent = result.textContent.slice(0, -9)
+           console.log("wrap it up")
         }
     }
 }
@@ -69,13 +66,10 @@ for (let modify of modifier) {
 if ((result.textContent.indexOf("+") == 0) || (result.textContent.indexOf("-") == 0) || (result.textContent.indexOf("*") == 0) || (result.textContent.indexOf("/") == 0) && (result.textContent.length == 1) ) {
     result.textContent = result.textContent.slice(0, -1);
     console.log("Don't Start")
-    // I don't think it matters but we'll add a 0 onto decimals with this
-
 }
         // Pussy Control Caller
         prince.pussyControl.call();
-        // Doves Cry Caller
-        prince.dovesCry.call();
+
     })
 }
 // This is our Clear Button Functionality
