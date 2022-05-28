@@ -20,8 +20,8 @@ const prince = {
     }
 },
     dovesCry: function limiter() {
-        if (result.textContent.length >= 10) {
-           result.textContent = result.textContent.slice(0, -9)
+        if (result.textContent.length >= 11) {
+           result.textContent = result.textContent.slice(0, -10)
            console.log("wrap it up")
         }
     }
