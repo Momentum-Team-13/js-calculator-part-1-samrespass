@@ -63,7 +63,7 @@ for (let modify of modifier) {
             console.log(result.textContent.indexOf("+"))
         }
         // This'll keep dummies from starting equations with modifiers
-if ((result.textContent.indexOf("+") == 0) || (result.textContent.indexOf("-") == 0) || (result.textContent.indexOf("*") == 0) || (result.textContent.indexOf("/") == 0) && (result.textContent.length == 1) ) {
+if ((result.textContent.indexOf("+") == 0) || (result.textContent.indexOf("*") == 0) || (result.textContent.indexOf("/") == 0) && (result.textContent.length == 1) ) {
     result.textContent = result.textContent.slice(0, -1);
     console.log("Don't Start")
 }
