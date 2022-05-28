@@ -7,8 +7,8 @@ let modifier = document.querySelectorAll('.modify')
 console.log(buttons)
 console.log(modifier)
 // Function for Controlling result length
-const pussy = {
-    sizer: function pussyControl() {
+const prince = {
+    pussyControl: function sizer() {
     if ((result.textContent.length > 6) && (result.textContent.length <= 8)) {
         result.style.fontSize = "36px"
     }
@@ -18,10 +18,16 @@ const pussy = {
     else {
         result.style.fontSize = "46px"
     }
-    if (result.textContent.length > 11) {
-        result.textContent = "";
+},
+    dovesCry: function limiter() {
+        if ((result.textContent.length >= 10) && (result.textContent.endsWith("+") === true))  {
+           result.textContent = result.textContent.slice(0, -2)
+           console.log("caught it!")
+        }
+        else if (result.textContent.length > 11) {
+            result.textContent = "";
+        }
     }
-}
 }
 
 // This is our keypad functionality
@@ -30,7 +36,9 @@ for (let button of buttons) {
         result.textContent += event.target.textContent;
         console.log(result.textContent.length);
         // Pussy Control Caller
-        pussy.sizer.call();
+        prince.pussyControl.call();
+        // Doves Cry Caller
+        prince.dovesCry.call();
     })
 }
 // This is our equal button functionality
@@ -40,7 +48,9 @@ finisher.addEventListener("click", function (formulize) {
     if ((result.textContent < 1) && (result.textContent.length > 6)) {
         result.textContent = result.textContent.slice(0, -14);
                 // Pussy Control Caller
-                pussy.sizer.call();
+                prince.pussyControl.call();
+                // Doves Cry Caller
+                prince.dovesCry.call();
     }
 }
 )
@@ -63,7 +73,9 @@ if ((result.textContent.indexOf("+") == 0) || (result.textContent.indexOf("-") =
 
 }
         // Pussy Control Caller
-        pussy.sizer.call();
+        prince.pussyControl.call();
+        // Doves Cry Caller
+        prince.dovesCry.call();
     })
 }
 // This is our Clear Button Functionality
