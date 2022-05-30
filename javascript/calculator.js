@@ -48,8 +48,6 @@ finisher.addEventListener("click", function (formulize) {
     }
                     // Pussy Control Caller
                     prince.pussyControl.call();
-                    // Doves Cry Caller
-                    prince.dovesCry.call();
 }
 )
 // This is our Modifier Button Functionality
