@@ -3,16 +3,17 @@ let result = document.querySelector('#resultScreen')
 let finisher = document.querySelector('.equate')
 let killer = document.querySelector('.clear')
 let modifier = document.querySelectorAll('.modify')
+let whoops = document.querySelector('#backSpace')
 
 console.log(buttons)
 console.log(modifier)
 // Function for Controlling result length
 const prince = {
     pussyControl: function sizer() {
-    if ((result.textContent.length > 6) && (result.textContent.length <= 8)) {
+    if ((result.textContent.length > 5) && (result.textContent.length <= 7)) {
         result.style.fontSize = "36px"
     }
-    else if (result.textContent.length > 8) {
+    else if (result.textContent.length > 7) {
         result.style.fontSize = "26px"
     }
     else {
@@ -20,8 +21,8 @@ const prince = {
     }
 },
     dovesCry: function limiter() {
-        if (result.textContent.length >= 11) {
-           result.textContent = result.textContent.slice(0, -10)
+        if (result.textContent.length >= 10) {
+           result.textContent = result.textContent.slice(0, -1)
            console.log("wrap it up")
         }
     }
@@ -69,6 +70,8 @@ if ((result.textContent.indexOf("+") == 0) || (result.textContent.indexOf("*") =
 }
         // Pussy Control Caller
         prince.pussyControl.call();
+                // Doves Cry Caller
+                prince.dovesCry.call();
 
     })
 }
@@ -78,4 +81,9 @@ killer.addEventListener("click", function (wiper) {
 }
 )
 
+// Backspace Functionality
+whoops.addEventListener("click", function (whoopsie) {
+    result.textContent = result.textContent.slice(0, -1);
+}
+)
 

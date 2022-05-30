@@ -5,9 +5,12 @@ button {padding:0;background-color:hotpink;width:100px;height:100px;border:1px b
 button:hover {background-color:darkviolet;}
 button:active {background-color:black;color:white;transition: 0s;}
 /* Calculator Styling */
-#calculatorHeader {display:grid;grid-template-columns: 25% 75%;background-color:black;}
+#calculatorHeader {display:grid;grid-template-columns: 25% 65% 10%;background-color:black;font-family: 'Press Start 2P', Roboto;padding-right:2px;}
 #calculatorButtons {display:grid;grid-template-columns: 25% 25% 25% 25%;grid-template-rows: 25% 25% 25% 25%;}
 #resultScreen {margin:auto;color:white;font-weight: bold;font-size:46px;font-family: 'Press Start 2P', Roboto;}
+#backSpace {color: white;font-size:46px;display:flex;justify-content: center;align-items: center;}
+#backSpace:hover {color:#a4a4a4;}
+#backSpace:active {color:white;transition: 0s;}
 div.button.keypad {width: 100%;height: 100%;display:flex;justify-content: center;align-items: center;}
 div.button.modify {width: 100%;height: 100%;display:flex;justify-content: center;align-items: center;}
 div.equate {width: 100%;height: 100%;display:flex;justify-content: center;align-items: center;}
